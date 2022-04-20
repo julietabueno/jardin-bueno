@@ -1,0 +1,703 @@
+/* fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Nunito:ital,wght@0,200;1,200&family=Palette+Mosaic&family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Nunito:ital,wght@0,200;1,200&family=Palette+Mosaic&family=Salsa&display=swap');
+
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    color: rgb(78, 77, 77);
+
+}
+/* -----------Grid gral--------------- */
+.grid {
+    display: grid;
+    grid-template-areas:"header header header"
+                        "main main main"
+                        "main main main"
+                        "footer footer footer"
+                        "footer footer footer";
+}
+
+/*--------------- header-------------- */
+header{
+    grid-area: header;
+}
+
+.gridHeader{
+    display: grid;
+    grid-template-areas: "headerLogo headerNav headerNav ";
+    padding:1%
+}
+
+.headerLogo{
+    grid-area: headerLogo;
+    padding: 3%;
+    margin-top: 10%;
+    margin-left: 15%;
+} 
+
+.imgLogo{
+    width: 50%;
+}
+
+.headerNav{
+    display: grid;
+    grid-area: headerNav;
+    width: 100%;
+}
+
+.navFlex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style:none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: large;
+}
+
+.navFlex :hover{
+    color: #d4696c;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*------------------- main Index------------ */
+main{
+    grid-area: main;
+    /* background-color: #e0ac39; */
+    background-image: linear-gradient(#fac656,  #fc9195)
+}
+
+.gridMain{
+    display: grid;
+    grid-template-areas:"texto gridFoto gridFoto "
+                        "texto gridFoto gridFoto";
+}
+
+.texto{
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10%; 
+    width: 100%;
+    margin-left: 12%;
+    padding-right: 10%;
+    justify-content: center;
+    font-family: 'Nunito Sans', sans-serif;
+    /* animacion  */
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+
+}
+.textoP1{
+    font-size: 150%;
+}
+.textoP2{
+    font-size:130% ;  
+}
+
+h1{
+    font-size: 300%;
+    font-family: 'Salsa', cursive;
+    }
+
+.gridFoto{
+    grid-area: gridFoto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imgCardI{
+    width: 80%;
+    margin-right: 5%;
+    padding: 5%;
+    margin-left: 5%;
+} 
+
+/*------------------- main Quienes Somos------------ */
+.mainStaff{
+    display: grid;
+    grid-template-areas:    "gridsStaff gridsStaff gridsStaff"
+                            "gridCardsStaffoG gridCardsStaff gridCardsStaff"
+                            "gridCardsStaff gridCardsStaff gridCardsStaff";
+}
+
+.gridsStaff {
+    grid-area: gridsStaff;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    padding: 2%;
+    font-size: 200%;
+    font-family: 'Salsa', cursive;
+    margin-bottom: 5%;
+}
+
+.gridCardsStaff{
+    grid-area: gridCards;
+    display: grid;
+    grid-template-areas: "cardUnoStaff cardDosStaff cardTresStaff"
+                            "cardCuatroStaff cardCincoStaff none";
+    justify-content: space-evenly;
+    padding-top: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+}
+
+.cardUnoStaff{
+    grid-area: cardUnoStaff;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 10%;
+    background-color: rgba(245, 245, 245, 0.589);
+    }
+
+.cardDosStaff{
+    grid-area: cardDosStaff;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 10%;
+    background-color: rgba(245, 245, 245, 0.589);
+}
+
+.cardTresStaff{
+    grid-area: cardTresStaff;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 10%;
+    background-color: rgba(245, 245, 245, 0.589);
+}
+
+.cardCuatroStaff{
+    grid-area: cardCuatroStaff;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 10%;
+    background-color: rgba(245, 245, 245, 0.589);
+}
+
+.cardCincoStaff{
+    grid-area: cardCincoStaff;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 10%;
+    background-color: rgba(245, 245, 245, 0.589);
+}
+
+.imgCardStaff{
+    width: 90%;
+    padding: 5%;
+} 
+
+.cardsStaffName{
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 120%;
+    padding: 5%;
+}
+
+.cardStaff{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardStaffP{
+    font-size: 100%;
+    padding: 5%;
+}
+
+/*------------------- main Propuestas------------ */
+.mainProp{
+    display: grid;
+    grid-template-areas:    "gridsProp gridsProp gridsProp"
+                            "gridCardsProp gridCardsProp gridCardsProp"
+                            "gridCardsProp gridCardsProp gridCardsProp";
+}
+
+.gridsProp {
+    grid-area: gridsProp;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    padding: 2%;
+    font-size: 200%;
+    font-family: 'Salsa', cursive;
+    margin-bottom: 5%;
+}
+
+.gridCardsProp{
+    grid-area: gridCardsProp;
+    display: grid;
+    grid-template-areas: "cardUnoProp cardDosProp cardTresProp"
+                            "cardCuatroProp cardCincoProp cardSeisProp";
+    justify-content: space-evenly;
+    padding-top: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+}
+.cardUnoProp{
+    grid-area: cardUnoProp;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 10%;
+    background-color: rgba(245, 245, 245, 0.589);
+    }
+
+.cardDosProp{
+    grid-area: cardDosProp;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 10%;
+    background-color: rgba(245, 245, 245, 0.589);
+}
+
+.cardTresProp{
+    grid-area: cardTresProp;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 10%;
+    background-color: rgba(245, 245, 245, 0.589);
+}
+
+.cardCuatroProp{
+    grid-area: cardCuatroProp;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 10%;
+    background-color: rgba(245, 245, 245, 0.589);
+}
+
+.cardCincoProp{
+    grid-area: cardCincoProp;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 10%;
+    background-color: rgba(245, 245, 245, 0.589);
+}
+.cardSeisProp{
+    grid-area: cardSeisProp;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 10%;
+    background-color: rgba(245, 245, 245, 0.589);
+}
+
+.imgCardProp{
+    width: 90%;
+    padding: 5%;
+} 
+
+.cardsPropName{
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 120%;
+    padding: 5%;
+}
+
+.cardProp{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardpropP{
+    font-size: 100%;
+    padding: 5%;
+}
+
+/*------------------- main Experiencias------------ 
+FALTA MODIFICAR*/
+.mainStaff{
+    display: grid;
+    grid-template-areas:    "gridsStaff gridsStaff gridsStaff"
+                            "gridCardsStaffoG gridCardsStaff gridCardsStaff"
+                            "gridCardsStaff gridCardsStaff gridCardsStaff";
+}
+
+.gridsStaff {
+    grid-area: gridsStaff;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    padding: 2%;
+    font-size: 200%;
+    font-family: 'Salsa', cursive;
+    margin-bottom: 5%;
+}
+
+.gridCardsStaff{
+    grid-area: gridCards;
+    display: grid;
+    grid-template-areas: "cardUnoStaff cardDosStaff cardTresStaff"
+                            "cardCuatroStaff cardCincoStaff none";
+    justify-content: space-evenly;
+    padding-top: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+}
+
+.cardUnoStaff{
+    grid-area: cardUnoStaff;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px;
+    background-color: rgba(245, 245, 245, 0.589);
+    /* padding: 10%; */
+    }
+
+.cardDosStaff{
+    grid-area: cardDosStaff;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px;
+    background-color: rgba(245, 245, 245, 0.589);
+    /* padding: 10%; */
+}
+
+.cardTresStaff{
+    grid-area: cardTresStaff;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px;
+    background-color: rgba(245, 245, 245, 0.589);
+    /* padding: 10%; */
+}
+
+.cardCuatroStaff{
+    grid-area: cardCuatroStaff;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px;
+    background-color: rgba(245, 245, 245, 0.589);
+    /* padding: 10%; */
+}
+
+.cardCincoStaff{
+    grid-area: cardCincoStaff;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px;
+    background-color: rgba(245, 245, 245, 0.589);
+    /* padding: 10%; */
+}
+
+.imgCardStaff{
+    width: 90%;
+    padding: 5%;
+} 
+
+.cardsStaffName{
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 120%;
+    padding: 5%;
+}
+
+.cardStaff{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardStaffP{
+    font-size: 100%;
+    padding: 5%;
+}
+
+
+/* ------------------Main Grupos--------------- */
+.mainGrupos{
+    display: grid;
+    grid-template-areas:    "textoH1 textoH1 textoH1"
+                            "gridCards gridCards gridCards";
+}
+
+.textoH1{
+    grid-area: textoH1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    justify-content: center;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.gruposh1{
+    font-size: 200%;
+    font-family: 'Salsa', cursive;
+}
+.textoGP{
+    font-size:130%   
+}
+
+.gridCards{
+ grid-area: gridCards;
+    display: grid;
+    grid-template-areas: "cardUno cardDos cardTres";
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+}
+
+.cardP{
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 120%;
+    padding: 5%;
+    margin-left: 2%;
+}
+
+.cardUno{
+    grid-area: cardUno;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    padding: 20%;
+    width: 140%;
+    background-color: rgba(245, 245, 245, 0.589);
+    }
+
+.cardDos{
+    grid-area: cardDos;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    padding: 20%;
+    width: 140%;
+    background-color: rgba(245, 245, 245, 0.589);
+}
+
+.cardTres{
+    grid-area: cardTres;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    padding: 20%;
+    width: 140%;
+    background-color: rgba(245, 245, 245, 0.589);
+}
+
+.imgCardG{
+    width: 120%;
+} 
+
+/* -----------------footer -------------*/
+footer{
+    grid-area: footer;
+    padding: 2%;
+}
+
+.gridFooter{
+    display: grid;
+    grid-template-areas: "footerLe footerLe footerLe"
+                            "redes redes redes";
+    justify-content: center;                       
+    justify-items: center;
+}
+
+.footerLe{
+    grid-area: footerLe;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.redes{
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+
+}
+
+.imgRedes {
+    width: 10%;
+}
+
+.imgRedes:hover{
+    width: 20%;
+}
+
+
+
+
+
+/* -------------responsive------------------------- */
+
+/* PC */
+/* main */
+@media screen and (max-width: 947px) {
+    .texto{
+        padding-right: 17%; 
+    }  
+}
+@media screen and (max-width: 883px) {
+    .texto{
+        padding-right: 15%; 
+    }  
+}   
+
+/* ----------------------------tablet --------- */
+@media screen and (max-width: 768px) {
+    .navFlex{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        align-items: flex-end;
+    } 
+
+/*----------------index-------*/
+    .gridMain{
+        display: grid;
+        grid-template-areas:"texto"
+                            "gridFoto";
+    }
+
+    .gridFoto{
+        padding: 5%;
+    }
+
+    .textoP2{
+        font-size: 100%;
+        margin-right: 10%;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .gridCardsStaff{
+            grid-template-areas: "cardUnoStaff cardDosStaff "
+                                "cardTresStaff cardCuatroStaff"
+                                "cardCincoStaff none";
+    }
+
+    .gridCards{
+        grid-template-areas: "cardUno"
+                            "cardDos"
+                            "cardTres";
+    }
+}
+
+    /* --------------------------Mobile ----------------*/
+@media screen and (max-width: 320px) {
+    .navFlex{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        align-items: flex-end;
+        /* width: 100%; */
+    } 
+    .imgLogo{
+        width: 120%;
+    }    
+}
+
+/* efecto */
+
+/* @keyframes un_efecto{
+    0%{ width: 100px; }
+    25%{ width: 300px; }
+    50%{ width: 200px;
+    background-color: red; }
+    75%{ width: 300px;}
+    100%{ width: 100px;
+    background-color:green;}
+}
+
+.imgCardI{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: un_efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+   /* }  */
