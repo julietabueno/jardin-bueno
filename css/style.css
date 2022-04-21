@@ -39,6 +39,9 @@ header{
 
 .imgLogo{
     width: 50%;
+    animation: flip; 
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
 }
 
 .headerNav{
@@ -60,6 +63,10 @@ header{
 
 .navFlex :hover{
     color: #d4696c;
+    cursor:pointer;
+    background: linear-gradient(#347855, #fac656, #0b3497, #fc9195);
+    -webkit-background-clip: text;
+    color: transparent;  
 }
 
 a {
@@ -93,8 +100,8 @@ main{
     justify-content: center;
     font-family: 'Nunito Sans', sans-serif;
     /* animacion  */
-    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
+    animation: bounce; 
+    animation-duration: 2s; 
 
 }
 .textoP1{
@@ -497,19 +504,21 @@ FALTA MODIFICAR*/
     padding-top: 5%;
     justify-content: center;
     font-family: 'Nunito Sans', sans-serif;
-
+    animation: bounceOut;
+    animation-duration: 2s;
 }
 
 .gruposh1{
     font-size: 200%;
     font-family: 'Salsa', cursive;
 }
+
 .textoGP{
     font-size:130%   
 }
 
 .gridCards{
- grid-area: gridCards;
+    grid-area: gridCards;
     display: grid;
     grid-template-areas: "cardUno cardDos cardTres";
     justify-content: space-evenly;
@@ -681,16 +690,8 @@ footer{
 
 /* efecto */
 
-/* @keyframes un_efecto{
-    0%{ width: 100px; }
-    25%{ width: 300px; }
-    50%{ width: 200px;
-    background-color: red; }
-    75%{ width: 300px;}
-    100%{ width: 100px;
-    background-color:green;}
-}
 
+/*
 .imgCardI{
     width: 100px;
     height: 100px;
