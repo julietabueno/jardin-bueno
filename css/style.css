@@ -21,7 +21,11 @@
 }
 
 /*--------------- header-------------- */
-header {
+.navbar-brand{
+    margin-left: 10%;
+}
+
+/* header {
     grid-area: header;
 }
 
@@ -74,13 +78,13 @@ header {
     cursor:pointer;
     background: linear-gradient(#347855, #fac656, #0b3497, #fc9195);
     /* ver como resolver compatibilidad de exploradores */
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text;
     color: transparent;  
-}
+} */
 
-a {
+/* a {
     text-decoration: none;
-}
+} */ 
 
 
 /*------------------- main Index------------ */
