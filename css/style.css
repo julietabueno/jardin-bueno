@@ -21,70 +21,22 @@
 }
 
 /*--------------- header-------------- */
-.navbar-brand{
+.navbar-brand {
     margin-left: 10%;
 }
 
-/* header {
-    grid-area: header;
-}
-
-.gridHeader {
-    display: grid;
-    grid-template-areas: "headerLogo headerNav headerNav ";
-    padding: 1%
-}
-
-.headerLogo {
-    grid-area: headerLogo;
-    padding: 3%;
-    margin-top: 10%;
-    margin-left: 15%;
-} 
-
-.imgLogo{
-    width: 50%;
-    animation: flip; 
-    animation-duration: 2s;
-    animation-iteration-count:infinite;
-}
-
-.imgLogo {
-    width: 50%;
+.indexHeaderLogo {
     animation: flip;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
-.headerNav {
-    display: grid;
-    grid-area: headerNav;
-    width: 100%;
+.indexHeaderNav :hover{
+    background-color: #347855;
+    cursor: pointer;
+    text-decoration: white;
 }
 
-.navFlex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style: none;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: large;
-}
-
-.navFlex :hover {
-    color: #d4696c;
-    cursor:pointer;
-    background: linear-gradient(#347855, #fac656, #0b3497, #fc9195);
-    /* ver como resolver compatibilidad de exploradores */
-    /* -webkit-background-clip: text;
-    color: transparent;  
-} */
-
-/* a {
-    text-decoration: none;
-} */ 
 
 
 /*------------------- main Index------------ */
@@ -113,8 +65,8 @@ main {
     justify-content: center;
     font-family: 'Nunito Sans', sans-serif;
     /* animacion  */
-    animation: bounce; 
-    animation-duration: 2s; 
+    animation: bounce;
+    animation-duration: 2s;
 
 }
 
@@ -163,8 +115,8 @@ h1 {
     font-family: 'Salsa', cursive;
     margin-bottom: 5%;
     /* animacion  */
-    animation: bounce; 
-    animation-duration: 2s; 
+    animation: bounce;
+    animation-duration: 2s;
 }
 
 .gridCardsStaff {
@@ -279,8 +231,8 @@ h1 {
     font-size: 200%;
     font-family: 'Salsa', cursive;
     margin-bottom: 2%;
-    animation: bounce; 
-    animation-duration: 2s; 
+    animation: bounce;
+    animation-duration: 2s;
 }
 
 .gridCardsProp {
@@ -306,7 +258,7 @@ h1 {
     margin: 10%;
     background-color: rgba(245, 245, 245, 0.589);
     border-radius: 15%;
-    }
+}
 
 .cardDosProp {
     grid-area: cardDosProp;
@@ -439,7 +391,7 @@ FALTA MODIFICAR*/
     margin: 20px;
     background-color: rgba(245, 245, 245, 0.589);
     border-radius: 15%;
-    }
+}
 
 .cardDosStaff {
     grid-area: cardDosStaff;
@@ -544,11 +496,11 @@ FALTA MODIFICAR*/
     font-family: 'Salsa', cursive;
 }
 
-.textoGP{
-    font-size:130%   
+.textoGP {
+    font-size: 130%
 }
 
-.gridCards{
+.gridCards {
     grid-area: gridCards;
     display: grid;
     grid-template-areas: "cardUno cardDos cardTres";
