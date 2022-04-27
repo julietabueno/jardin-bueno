@@ -17,17 +17,21 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Nunito:wght@200&family=Palette+Mosaic&family=Raleway:wght@100&family=Salsa&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Nunito:wght@200&family=Palette+Mosaic&family=Raleway:wght@100&family=Salsa&display=swap"
+        rel="stylesheet">
     <link rel="shorcut icon" type="icon" href="img/logo sin fondo corto peque.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Nunito:ital,wght@0,200;1,200&family=Palette+Mosaic&family=Raleway:wght@100&family=Salsa&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Nunito:ital,wght@0,200;1,200&family=Palette+Mosaic&family=Raleway:wght@100&family=Salsa&display=swap"
+        rel="stylesheet">
     <title>Arstimarfla Jardín Rodante</title>
 </head>
 
 
 
-    <!-- Todo el contenido visible de la web -->
+<!-- Todo el contenido visible de la web -->
 
 <body>
     <!------------------Header---------------- -->
@@ -47,9 +51,11 @@
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link rounded-circle bg-primary text-light" href="../index.html">Inicio</a>
                         <a class="nav-link rounded-circle bg-success text-light" href="grupos.html">Grupos</a>
-                        <a class="nav-link rounded-circle bg-danger text-light" href="quienessmos.html">Quienes Somos</a>
+                        <a class="nav-link rounded-circle bg-danger text-light" href="quienessmos.html">Quienes
+                            Somos</a>
                         <a class="nav-link rounded-circle bg-secondary text-light" href="propuestas.html">Propuestas</a>
-                        <a class="nav-link rounded-circle bg-warning text-light" href="experiencias.html">Experiencias</a>
+                        <a class="nav-link rounded-circle bg-warning text-light"
+                            href="experiencias.html">Experiencias</a>
                         <a class="nav-link rounded-circle bg-info text-light" href="contacto.html">Contacto</a>
                     </div>
                 </div>
@@ -58,46 +64,62 @@
     </header>
     <!--------------------- main------------------------ -->
     <!--  -botones contacto y formulario -- -->
-    <main class="main">
-        <section>
-            <div class="main__presentacion">
-                <h1 class="main__presentacion--h1"> <strong>Contactate con nosotras</strong>
-                </h1>
+    <main class="mainContacto">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-5">
+                    <div>
+                        <h1 class="main__presentacion"> Contactate con nosotras </h1>
+                    </div>
+                    <div>
+                        <button>whatsapp</button>
+                        <button>Instagram</button>
+                    </div>
+                </div>
+
+                <!-- Formulario de contacto de Bootstrap--> 
+                <div class="col-7">
+                    <form class="col">
+                        <div class="col-md-3">
+                            <label for="inputNombre4" class="form-label">Nombre</label>
+                            <input type="nombre" class="form-control" id="inputNombre4">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="inputApellido4" class="form-label">Apellido</label>
+                            <input type="apellido" class="form-control" id="inputApellido4">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="@">
+                        </div>
+                        <div class="col-3">
+                            <label for="inputtelefono2" class="form-label">Teléfono</label>
+                            <input type="text" class="form-control" id="inputtelefono2" placeholder="+541199999999">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="inputModoContacto" class="form-label">¿Cómo preferís que te contactemos?</label>
+                            <select id="inputModoContacto" class="form-select">
+                                <option selected>Elegí...</option>
+                                <option>Teléfono</option>
+                                <option>Whatsapp</option>
+                                <option>e-mail</option>
+                                <option>Otra forma</option>
+                            </select>
+                        </div>
+                        <div class="col-6 row-6">
+                            <label for="inputMensaje4" class="form-label">Mensaje</label>
+                            <input type="mensaje" class="form-control" id="inputMensaje4"
+                                placeholder="Por favor, dejanos tu mensaje">
+                        </div>
+                        <!-- Botones del formulario -->
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="reset" class="btn btn-primary">Borrar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-
-            <div>
-                <button>whatsapp</button>
-                <button>Instagram</button>
-            </div>
-
-            <div>
-                <!-- Formulario de contacto -->
-                <fieldset>
-                    <legend>Dejanos tu consulta</legend>
-                    <label for="nombre_apellido">Nombre:</label>
-                    <input type="text" name="nombre_apellido" placeholder="Nombre y apellido">
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" placeholder="Su email">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="number" name="telefono" placeholder="1199999999">
-                    <!-- ¿Cómo preferís que te contactemos?</label> -->
-                    <select name="pref_contacto">
-                        <option value="seleccion">¿Cómo preferís que te contactemos?</option>
-                        <option value="telefono">Teléfono</option>
-                        <option value="email">E-mail</option>
-                        <option value="whatsapp">Whatsapp</option>
-                        <option value="otros">Otros</option>
-                    </select>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="text" cols="30" rows="10"
-                        placeholder="Por favor, dejanos tu mensaje aquí."></textarea>
-
-                    <!-- Botones de enviar o limpiar form -->
-                    <input type="submit" value="Enviar Formulario">
-                    <input type="reset" value="Limpiar Formulario">
-
-                </fieldset>
-            </div>
+        </div>
 
     </main>
 
