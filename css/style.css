@@ -1,18 +1,18 @@
-/* :root {
-    background-image: url(/img/arcoiris2.jpg)
-} */
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif color: rgb(78, 77, 77)
+}
 
 /* fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Nunito:ital,wght@0,200;1,200&family=Palette+Mosaic&family=Salsa&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Nunito:ital,wght@0,200;1,200&family=Palette+Mosaic&family=Salsa&display=swap');
 
-* {
+/* * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     color: rgb(78, 77, 77);
 
-}
+} */
 
 /* -----------Grid gral--------------- */
 .grid {
@@ -25,21 +25,18 @@
 }
 
 /*--------------- header-------------- */
-/* .navbar-brand {
+.navbar-brand {
     margin-left: 10%;
-} */
-
-/* .indexHeaderLogo {
     animation: flip;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
-.indexHeaderNav :hover{
+.nav-link:hover {
     background-color: #6bf5ad;
     cursor: pointer;
-    text-decoration:underline;
-} */
+    text-decoration: underline;
+}
 
 
 /*------------------- main Index------------ */
@@ -571,13 +568,22 @@ FALTA MODIFICAR*/
 }
 
 /* ----------------contacto-------------------- */
+.mainContacto {
+    font-family: 'Nunito Sans', sans-serif;
+    padding-left: 3%;
+}
 
+.formContacto {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 
 /* -----------------footer -------------*/
 footer {
     grid-area: footer;
     padding: 2%;
 }
+
 
 .gridFooter {
     display: grid;
