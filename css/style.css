@@ -1,3 +1,6 @@
+:root{
+    background-image: url(/img/arcoiris2.jpg)
+}
 /* fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Nunito:ital,wght@0,200;1,200&family=Palette+Mosaic&family=Salsa&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Nunito:ital,wght@0,200;1,200&family=Palette+Mosaic&family=Salsa&display=swap');
@@ -21,22 +24,21 @@
 }
 
 /*--------------- header-------------- */
-.navbar-brand {
+/* .navbar-brand {
     margin-left: 10%;
-}
+} */
 
-.indexHeaderLogo {
+/* .indexHeaderLogo {
     animation: flip;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
 .indexHeaderNav :hover{
-    background-color: #347855;
+    background-color: #6bf5ad;
     cursor: pointer;
-    text-decoration: white;
-}
-
+    text-decoration:underline;
+} */
 
 
 /*------------------- main Index------------ */

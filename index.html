@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.css">
+
     <link rel="stylesheet" href="https://mdbootstrap.com/">
     <link rel="shorcut icon" type="icon" href="img/logo sin fondo corto peque.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,39 +33,48 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!-- Nav de BT -->
     <header>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img class="indexHeaderLogo bg-light rounded px-4" src="img/logo sin fondo corto peque.png"
-                        alt="Logo del jardin"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html"><img class="bg-light rounded px-4"
+                        src="../img/logo sin fondo corto peque.png" alt="Logo del jardin"></a></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="indexHeaderNav navbar-nav ms-auto">
-                        <a class="nav-link  text-secondary" href="index.html">Inicio</a>
-                        <a class="nav-link  text-secondary" href="pages/grupos.html">Grupos</a>
-                        <a class="nav-link  text-secondary" href="pages/quienessmos.html">Quienes
-                            Somos</a>
-                        <a class="nav-link text-secondary" href="pages/propuestas.html">Propuestas</a>
-                        <a class="nav-link text-secondary"
-                            href="pages/experiencias.html">Experiencias</a>
-                        <a class="nav-link text-secondary" href="pages/contacto.html">Contacto</a>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link rounded-circle bg-primary text-light" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-circle bg-success text-light" href="./pages/grupos.html">Grupos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-circle bg-danger text-light" href="./pages/quienessmos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-circle bg-secondary text-light" href="./pages/propuestas.html">Propuestas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-circle bg-warning text-light" href="./pages/experiencias.html">Experiencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-circle bg-info text-light" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
     <!-- MAIN -->
-    
+
     <main class="gridMain" class="container">
         <!-- TEXT -->
         <div class="texto">
@@ -78,9 +87,9 @@
 
         <!-- carrousel -->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner w-90 px-3">
                 <div class="carousel-item active">
-                    <img src="./img/comiendo.jpg" class="d-block w-100" alt="foto1">
+                    <img src="./img/rollos.JPG" class="d-block w-100" alt="foto1">
                 </div>
                 <div class="carousel-item">
                     <img src="./img/pintando.jpg" class="d-block w-100" alt="foto2">
